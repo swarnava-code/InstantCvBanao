@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Instant CV Banao (Beta)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Instant CV Banao (Beta)</string>
+    <string name="nav_header_subtitle">Resume Maker App</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_reset">Reset the CV</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_save">Save as PNG</string>
+
+    <string name="menu_home">Sample</string>
+    <string name="menu_gallery">Picture Guide</string>
+    <string name="menu_slideshow">Learning Videos</string>
+    <string name="menu_tools">Change Color [Temp]</string>
+    <string name="menu_quit">Quit</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_feed">Feedback</string>
+    <string name="menu_report">Report</string>
+    <string name="menu_rate">Rate</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="contact">Personal Details</string>
+    <string name="academic">Academic Details</string>
+    <string name="experience">Work Experience</string>
+    <string name="project">Project Information</string>
+    <string name="reference">Reference Information</string>
+    <string name="skill">Skills</string>
+    <string name="interest">Interest</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="strength">Strength</string>
+    <string name="achievements">Achievements</string>
+    <string name="objective">Objective</string>
+    <string name="declaration">Declaration</string>
+
+    <string name="objective_sample">To Work for an Organisation to Improve my skills and knowledge to growth along with the organization objective</string>
+    <string name="declaration_sample">I hereby declare all the information provided above is true to the best of my knowledge.</string>
+
+
+    <string name="autoFill">Click the following to Auto Fill</string>
+
+</resources>

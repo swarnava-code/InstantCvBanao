@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sclab.doc.instantcvbanao.ContactActivity">
+
+    <LinearLayout
+        style="@style/saveAndDel_layout"
+        android:layout_height="48dp">
+
+        <ImageButton
+            android:id="@+id/goHome"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="?attr/actionModeCloseDrawable"
+            android:onClick="onClickNav"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:text="@string/contact" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/saveAndDel_layout">
+        <Button
+            style="@style/save"
+            android:id="@+id/updateBtn"/>
+        <Button
+            style="@style/delete"
+            android:text="RESET"
+            android:id="@+id/resetBtn"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/editHeading"
+                android:gravity="center"
+                android:text="Profile Photo" />
+            <ImageView
+                android:id="@+id/profilePhoto"
+                android:background="#7A000000"
+                android:layout_gravity="center"
+                android:layout_width="75dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                android:src="@drawable/user"
+                tools:srcCompat="@android:drawable/ic_menu_gallery"></ImageView>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Name*" />
+            <EditText
+                style="@style/editText"
+                android:inputType="text"
+                android:hint="@string/nav_header_title"
+                android:id="@+id/updateName"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Gender"/>
+            <EditText
+                style="@style/editText"
+                android:inputType="text"
+                android:hint="Male"
+                android:id="@+id/updateGender"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Phone no."/>
+            <EditText
+                style="@style/editText"
+                android:inputType="phone"
+                android:hint="86971878**  98302107**"
+                android:id="@+id/updatePhone"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Email" />
+            <EditText
+                style="@style/editText"
+                android:inputType="textEmailAddress"
+                android:hint="sclabcse@gmail.com"
+                android:id="@+id/updateEmail"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Language"/>
+            <EditText
+                style="@style/editText"
+                android:inputType="textAutoCorrect"
+                android:hint="Bengali , Hindi , English"
+                android:id="@+id/updateLanguage"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="DOB"/>
+            <EditText
+                style="@style/editText"
+                android:inputType="date"
+                android:hint="29/06/1997"
+                android:id="@+id/updateDob"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Nationality :" />
+            <EditText
+                style="@style/editText"
+                android:inputType="textAutoCorrect"
+                android:hint="Indian"
+                android:id="@+id/updateNationality"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Address"/>
+            <EditText
+                style="@style/editText"
+                android:inputType="text"
+                android:hint="A/1, Rabindra Nagar, Kol-700 018, WB, India"
+                android:id="@+id/updateAddress"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Website :"/>
+            <EditText
+                style="@style/editText"
+                android:inputType="textWebEmailAddress"
+                android:hint="sclabcse.blogspot.com"
+                android:id="@+id/updateWebsite"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

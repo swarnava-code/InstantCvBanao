@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/picture_bg"
+    tools:context="sclab.doc.instantcvbanao.PictureActivity">
+
+    <LinearLayout
+        style="@style/saveAndDel_layout"
+        android:layout_height="48dp">
+
+        <ImageButton
+            android:id="@+id/goHome"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="?attr/actionModeCloseDrawable"
+            android:onClick="onClickNav"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:text="@string/menu_gallery" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/saveAndDel_layout">
+        <Button
+            style="@style/save"
+            android:text="Next"
+            android:id="@+id/next"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/img"
+        android:src="@drawable/init"/>
+
+</LinearLayout>

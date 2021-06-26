@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#775EA6FF"
+    android:orientation="horizontal">
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg1"
+        android:id="@+id/organisation" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg2"
+        android:id="@+id/position" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg1"
+        android:id="@+id/duration" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg2"
+        android:id="@+id/activities" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg1"
+        android:id="@+id/exposure" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg2"
+        android:id="@+id/responsibility" />
+
+</LinearLayout>

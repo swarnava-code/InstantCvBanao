@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sclab.doc.instantcvbanao.AcademicActivity">
+
+    <LinearLayout
+        style="@style/saveAndDel_layout"
+        android:layout_height="48dp">
+        <ImageButton
+            android:id="@+id/goHome"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="?attr/actionModeCloseDrawable"
+            android:onClick="onClickNav"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:text="@string/academic" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/saveAndDel_layout">
+        <Button
+            style="@style/save"
+            android:id="@+id/insertBtnAca" />
+        <Button
+            style="@style/delete"
+            android:id="@+id/deleteBtnAca"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Degree / Certificate" />
+            <EditText
+                style="@style/editText"
+                android:inputType="textAutoCorrect"
+                android:hint="B.Tech"
+                android:id="@+id/degree"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="College/University/School/Institute" />
+            <EditText
+                style="@style/editText"
+                android:inputType="text"
+                android:hint="STCET"
+                android:id="@+id/institute"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Percentage / CGPA" />
+            <EditText
+                style="@style/editText"
+                android:inputType="numberDecimal"
+                android:hint="70%"
+                android:id="@+id/percentage"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Passing Year :" />
+            <EditText
+                style="@style/editText"
+                android:inputType="date"
+                android:hint="2018"
+                android:id="@+id/year"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

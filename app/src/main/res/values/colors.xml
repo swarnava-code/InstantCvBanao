@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#146EBB</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="Btn">#8B935BF7</color>
+
+    <color name="head">#C3F86B</color>
+    <color name="headTextColor">#531510</color>
+    <color name="body_bg">#FFFFFF</color>
+    <color name="body_txt">#000000</color>
+    <color name="border">#762385</color>
+
+    <color name="picture_bg">#0D143A</color>
+
+    <color name="lv_bg1">#FFFFFF</color>
+    <color name="lv_bg2">#FFFFFF</color>
+
+    <color name="table_head_bg">#7E8BC34A</color>
+
+</resources>

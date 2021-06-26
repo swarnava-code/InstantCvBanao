@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#775EA6FF"
+    android:orientation="horizontal">
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg1"
+        android:id="@+id/ref_person" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg2"
+        android:id="@+id/ref_designation" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg1"
+        android:id="@+id/ref_organisation" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg2"
+        android:id="@+id/ref_email" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg1"
+        android:id="@+id/ref_description" />
+
+</LinearLayout>

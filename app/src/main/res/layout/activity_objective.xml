@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sclab.doc.instantcvbanao.ObjectiveActivity">
+
+    <LinearLayout
+        style="@style/saveAndDel_layout"
+        android:layout_height="48dp">
+
+        <ImageButton
+            android:id="@+id/goHome"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="?attr/actionModeCloseDrawable"
+            android:onClick="onClickNav"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:text="@string/objective" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/saveAndDel_layout">
+        <Button
+            style="@style/save"
+            android:id="@+id/updateBtn"/>
+        <Button
+            style="@style/delete"
+            android:text="RESET"
+            android:id="@+id/resetBtn"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Objective :"/>
+            <EditText
+                style="@style/editText"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content"
+                android:hint="To work for an Organisation which..."
+                android:id="@+id/objectiveIn"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/autoFill"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/objective_sample"
+                android:background="@color/colorAccent"
+                android:onClick="autoFill"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="sclab.doc.instantcvbanao.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:id="@+id/cv">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarFadeDuration="1">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="#C3F5FC"
+                android:onClick="contact">
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="75dp"
+                    android:layout_height="100dp"
+                    android:background="#5e37a3fa"
+                    android:src="@drawable/user"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textViewhead"
+                        android:text="@string/contact"
+                        android:id="@+id/contact_info_head"
+                        />
+                    <TextView
+                        style="@style/textViewBody"
+                        android:id="@+id/contact_info" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                style="@style/textViewhead"
+                android:text="@string/academic"
+                android:onClick="academic"
+                android:id="@+id/academic_info_head" />
+            <!--
+            <TextView
+                style="@style/textViewBody"
+                android:id="@+id/academic_info"
+                android:onClick="academic"/>
+                -->
+            <LinearLayout
+                android:id="@+id/table_head_aca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/certificate"
+                    style="@style/tableHeading"
+                    android:layout_height="match_parent"
+                    android:background="@color/lv_bg1"
+                    android:text="Certificate" />
+                <TextView
+                    android:id="@+id/institute"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg2"
+                    android:text="Institute"/>
+                <TextView
+                    android:id="@+id/percentage"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg1"
+                    android:text="Percentage"/>
+                <TextView
+                    android:id="@+id/passing_year"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg2"
+                    android:text="Passing Year"/>
+            </LinearLayout>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/lv_academic"></ListView>
+
+
+
+            <TextView
+                style="@style/textViewhead"
+                android:text="@string/experience"
+                android:onClick="experience"
+                android:id="@+id/work_exp_head" />
+            <!--
+            <TextView
+                style="@style/textViewBody"
+                android:id="@+id/work_exp"
+                android:onClick="experience"/>
+                 -->
+
+            <LinearLayout
+                android:id="@+id/table_head_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/organisation"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg1"
+                    android:text="Organisation"/>
+                <TextView
+                    android:id="@+id/position"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg2"
+                    android:text="Position"/>
+                <TextView
+                    android:id="@+id/duration"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg1"
+                    android:text="Duration"/>
+                <TextView
+                    android:id="@+id/activities"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg2"
+                    android:text="Activities"/>
+                <TextView
+                    android:id="@+id/exposure"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg1"
+                    android:text="Industrial Exposure"/>
+                <TextView
+                    android:id="@+id/responsibility"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg2"
+                    android:text="Job Responsibility"/>
+            </LinearLayout>
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/lv_work"></ListView>
+
+
+            <TextView
+                style="@style/textViewhead"
+                android:text="@string/project"
+                android:onClick="project"
+                android:id="@+id/proj_info_head" />
+            <!--
+            <TextView
+                style="@style/textViewBody"
+                android:id="@+id/proj_info"
+                android:onClick="project"/>
+                 -->
+            <LinearLayout
+                android:id="@+id/table_head_proj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/project_title"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg1"
+                    android:text="Title"/>
+                <TextView
+                    android:id="@+id/project_description"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg2"
+                    android:text="Description"/>
+                <TextView
+                    android:id="@+id/role"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg1"
+                    android:text="Role"/>
+                <TextView
+                    android:id="@+id/project_duration"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg2"
+                    android:text="Duration"/>
+                <TextView
+                    android:id="@+id/team_size"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg2"
+                    android:text="Team Size"/>
+            </LinearLayout>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/lv_project"></ListView>
+
+
+            <TextView
+                style="@style/textViewhead"
+                android:text="@string/reference"
+                android:onClick="reference"
+                android:id="@+id/ref_info_head" />
+            <LinearLayout
+                android:id="@+id/table_head_ref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/ref_person"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg1"
+                    android:text="Person Name"/>
+                <TextView
+                    android:id="@+id/ref_designation"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg2"
+                    android:text="Designation"/>
+                <TextView
+                    android:id="@+id/ref_organisation"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg1"
+                    android:text="Organisation"/>
+                <TextView
+                    android:id="@+id/ref_email"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg2"
+                    android:text="Email"/>
+                <TextView
+                    android:id="@+id/ref_description"
+                    style="@style/tableHeading"
+                    android:background="@color/lv_bg2"
+                    android:text="Description"/>
+            </LinearLayout>
+
+            <!--
+            <TextView
+                style="@style/textViewBody"
+                android:id="@+id/ref_info"
+                android:onClick="reference"/>
+                 -->
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/lv_ref"></ListView>
+
+
+            <TextView
+                style="@style/textViewhead"
+                android:text="@string/skill"
+                android:onClick="skill"
+                android:id="@+id/skill_head" />
+            <TextView
+                style="@style/textViewBody"
+                android:id="@+id/skill"
+                android:onClick="skill"/>
+
+
+            <TextView
+                style="@style/textViewhead"
+                android:text="@string/interest"
+                android:onClick="interest"
+                android:id="@+id/interest_head" />
+            <TextView
+                style="@style/textViewBody"
+                android:id="@+id/interest"
+                android:onClick="interest"/>
+
+
+            <TextView
+                style="@style/textViewhead"
+                android:text="@string/hobbies"
+                android:onClick="hobbies"
+                android:id="@+id/hobbies_head" />
+            <TextView
+                style="@style/textViewBody"
+                android:id="@+id/hobbies"
+                android:onClick="hobbies"/>
+
+            <TextView
+                style="@style/textViewhead"
+                android:text="@string/strength"
+                android:onClick="strength"
+                android:id="@+id/strength_head" />
+            <TextView
+                style="@style/textViewBody"
+                android:id="@+id/strength"
+                android:onClick="strength"/>
+
+            <TextView
+                style="@style/textViewhead"
+                android:text="@string/achievements"
+                android:onClick="achievement"
+                android:id="@+id/achievement_head" />
+            <TextView
+                style="@style/textViewBody"
+                android:id="@+id/achievement"
+                android:onClick="achievement"/>
+
+            <TextView
+                style="@style/textViewhead"
+                android:text="@string/objective"
+                android:onClick="objective"
+                android:id="@+id/objective_head" />
+            <TextView
+                style="@style/textViewBody"
+                android:id="@+id/objective"
+                android:onClick="objective"/>
+
+            <TextView
+                style="@style/textViewhead"
+                android:text="@string/declaration"
+                android:onClick="declaration"
+                android:id="@+id/declaration_head" />
+            <TextView
+                style="@style/textViewBody"
+                android:id="@+id/declaration"
+                android:onClick="declaration"/>
+
+
+
+
+
+            <TextView
+                style="@style/textViewBody"
+                android:text=""
+                android:layout_height="30dp"
+                android:onClick="updateMore"/>
+
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="signature">
+                <TextView
+                    style="@style/textViewBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date:\nPlace:" />
+                <TextView
+                    style="@style/textViewBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginLeft="0dp"
+                    android:text="_________________________________\nSignature                     " />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/endcv"
+                style="@style/textViewBody"
+                android:layout_height="500dp"
+                android:gravity="center"
+                android:text="----------END----------"
+                android:onClick="updateMore"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sclab.doc.instantcvbanao.AchievementActivity">
+
+    <LinearLayout
+        style="@style/saveAndDel_layout"
+        android:layout_height="48dp">
+
+        <ImageButton
+            android:id="@+id/goHome"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="?attr/actionModeCloseDrawable"
+            android:onClick="onClickNav"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:text="@string/achievements" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/saveAndDel_layout">
+
+        <Button
+            style="@style/save"
+            android:id="@+id/insertBtnWork" />
+
+        <Button
+            style="@style/delete"
+            android:id="@+id/deleteBtnWork"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Achievements :" />
+            <EditText
+                style="@style/editText"
+                android:inputType="textAutoCorrect"
+                android:hint="1st in JK Hackathon"
+                android:id="@+id/et1"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#775EA6FF"
+    android:orientation="horizontal">
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg1"
+        android:id="@+id/degree" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg2"
+        android:id="@+id/institute" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg1"
+        android:id="@+id/percentage" />
+
+    <TextView
+        style="@style/lv_style"
+        android:background="@color/lv_bg2"
+        android:id="@+id/passing_year" />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_launcher_background"
+    tools:context="sclab.doc.instantcvbanao.UpdateActivity">
+
+
+    <LinearLayout
+        style="@style/saveAndDel_layout"
+        android:layout_height="48dp">
+
+        <ImageButton
+            android:id="@+id/goHome"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="?attr/actionModeCloseDrawable"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:text="ADD DATA :)" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/Btn"
+                android:layout_marginTop="5dp"
+                android:text="@string/contact"
+                android:id="@+id/contact_info_btn"/>
+
+            <Button
+                style="@style/Btn"
+                android:text="@string/academic"
+                android:id="@+id/academic_info_btn"/>
+
+            <Button
+                style="@style/Btn"
+                android:text="@string/experience"
+                android:id="@+id/work_exp_btn"/>
+
+            <Button
+                style="@style/Btn"
+                android:text="@string/project"
+                android:id="@+id/project_info_btn"/>
+
+            <Button
+                style="@style/Btn"
+                android:text="@string/reference"
+                android:id="@+id/ref_info_btn"/>
+
+            <Button
+                style="@style/Btn"
+                android:text="@string/skill"
+                android:id="@+id/skill_btn"
+                />
+
+            <Button
+                style="@style/Btn"
+                android:text="@string/interest"
+                android:id="@+id/interest_btn"/>
+
+            <Button
+                style="@style/Btn"
+                android:text="@string/hobbies"
+                android:id="@+id/hobbies_btn"/>
+
+            <Button
+                style="@style/Btn"
+                android:text="@string/strength"
+                android:id="@+id/strength_btn"
+                />
+
+            <Button
+                style="@style/Btn"
+                android:text="@string/achievements"
+                android:id="@+id/achievement_btn"/>
+
+            <Button
+                style="@style/Btn"
+                android:text="@string/objective"
+                android:id="@+id/objective_btn"/>
+
+            <Button
+                style="@style/Btn"
+                android:text="@string/declaration"
+                android:id="@+id/declaration_btn"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

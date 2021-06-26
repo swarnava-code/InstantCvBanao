@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sclab.doc.instantcvbanao.ReferenceActivity">
+
+    <LinearLayout
+        style="@style/saveAndDel_layout"
+        android:layout_height="48dp">
+
+        <ImageButton
+            android:id="@+id/goHome"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="?attr/actionModeCloseDrawable"
+            android:onClick="onClickNav"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:text="@string/reference" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/saveAndDel_layout">
+
+        <Button
+            style="@style/save"
+            android:id="@+id/insertBtnWork" />
+
+        <Button
+            style="@style/delete"
+            android:id="@+id/deleteBtnWork"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Name of Person :" />
+            <EditText
+                style="@style/editText"
+                android:inputType="text"
+                android:hint="Mr. Nitish Singh Sir"
+                android:id="@+id/et1"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Reference's Designation :" />
+            <EditText
+                style="@style/editText"
+                android:inputType="textAutoCorrect"
+                android:hint="Trainer"
+                android:id="@+id/et2"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Reference's Organisation : " />
+            <EditText
+                style="@style/editText"
+                android:inputType="text"
+                android:hint="MYWBUT"
+                android:id="@+id/et3"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Email : " />
+            <EditText
+                style="@style/editText"
+                android:inputType="textEmailAddress"
+                android:hint="admin@mywbut.com"
+                android:id="@+id/et4"/>
+
+            <TextView
+                style="@style/editHeading"
+                android:text="Description : " />
+            <EditText
+                style="@style/editText"
+                android:hint="Employee at CTS"
+                android:inputType="textAutoCorrect"
+                android:id="@+id/et5"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
